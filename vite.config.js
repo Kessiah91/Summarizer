@@ -1,8 +1,8 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
+import { defineConfig } from 'vite';
+import Vue from '@vitejs/plugin-vue';
+import VitePluginGhPages from 'vite-plugin-gh-pages'; // Import the plugin
 
-// https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [react()],
+  plugins: [Vue(), VitePluginGhPages()], 
   base: "/Summarizer/"
-})
+});
